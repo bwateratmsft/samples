@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Launch via NPM",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "start"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "node ./bin/www",
+                "uriFormat": "http://localhost:3000"
+            },
+            "type": "pwa-node"
+        }
+    ]
+}
